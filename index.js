@@ -37,4 +37,11 @@ const todos = (state = [], action) => {
 		case ADD_TODO:
 			return state.concat([action.todo])
 	}
-} 
+}
+
+cons addTodoAction = (todo) => {
+	return {
+		type: ADD_TODO,
+		todo
+	}
+}
